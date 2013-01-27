@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/estilos.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Codystar:300,400' rel='stylesheet' type='text/css'>
+
+        <style type="text/css" media="all">
+             #div {
+                width: 250px;
+                height: 250px;
+                padding: 8px 12px;
+                border: 0px dashed #aaa;
+                margin: 30px;
+                background:#f6f6f6;
+                white-space: pre;
+                
+                border-radius: 100%;
+             }
+
+             form {
+                border: 1px dashed #ccc;
+                width: 300px;
+                display: inline-block;
+             }
+             label {
+                display: block;
+             }
+             input {
+                position: relative;
+                top: 4px;
+             }
+        </style>
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+        <button type="button" id="add">ADD NOVO</button>
+        </br>
+        <pre id="syntax" ></pre>
+
+        <div id="div"></div>
+
+    <form id="sombra0">
+        <label> Distancia X da sombra</label> 
+        <input type="range" min="-100" max="100" step="1" value="0" class="xPos"/>
+        <input type="number" class="xOut" value="0" id="lor"/>
+        <br />
+
+        <label> Distancia Y da sombra</label> 
+        <input type="range" min="-100" max="100" step="1" value="0" class="yPos"/>
+        <input type="number" class="yOut" value="0"/>
+        <br />
+
+        <label> Blur da sombra</label> 
+        <input  type="range" min="0" max="100" step="1" value="0" class="Blur"/>
+        <input type="number" class="blurOut" value="0"/>
+        <br />
+
+        <label>Selecione a cor</label>
+        <input type="color" value="#000000" class="cor" /> 
+        <input type="text" class="colorOut" value="0"/>
+        <br />
+
+        <label>Tipo de sombra</label>
+        <input type="checkbox" class="tipo" value="inset" /> 
+        <output class="tipoOut"> inset </output>
+        <br />
+    </form>
+
+
+
+    
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/beharvor.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-4493860-1'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+
+    </body>
+</html>
